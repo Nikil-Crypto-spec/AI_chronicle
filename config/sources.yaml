@@ -1,0 +1,61 @@
+# Source definitions for the collector.
+#
+# Each entry has:
+#   name:    short identifier shown in the newsletter
+#   kind:    rss | html
+#   url:     feed URL (rss) or homepage URL (html)
+#   enabled: true|false
+#   weight:  multiplier applied to the relevance score (1.0 = neutral)
+#   section: optional human-friendly section label
+#
+# Prefer rss where possible. Use html only for sources without a feed.
+
+sources:
+  - name: nature
+    kind: rss
+    url: https://www.nature.com/nature.rss
+    section: Nature (research)
+    enabled: true
+    weight: 1.2
+
+  - name: nature-news
+    kind: rss
+    url: https://www.nature.com/subjects/news.rss
+    section: Nature News
+    enabled: true
+    weight: 1.0
+
+  - name: science
+    kind: rss
+    url: https://www.science.org/rss/news_current.xml
+    section: Science (AAAS)
+    enabled: true
+    weight: 1.1
+
+  - name: arxiv-cs-lg
+    kind: rss
+    url: http://export.arxiv.org/rss/cs.LG
+    section: arXiv cs.LG (Machine Learning)
+    enabled: true
+    weight: 0.9
+
+  - name: arxiv-stat-ml
+    kind: rss
+    url: http://export.arxiv.org/rss/stat.ML
+    section: arXiv stat.ML
+    enabled: false
+    weight: 0.9
+
+  - name: elife
+    kind: rss
+    url: https://elifesciences.org/rss/recent.xml
+    section: eLife (recent)
+    enabled: true
+    weight: 1.0
+
+  - name: pnas
+    kind: rss
+    url: https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=pnas
+    section: PNAS
+    enabled: true
+    weight: 1.0

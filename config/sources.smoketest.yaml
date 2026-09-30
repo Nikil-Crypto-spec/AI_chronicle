@@ -1,0 +1,8 @@
+# Smoke-test source list: one small, reliable RSS feed (arXiv).
+sources:
+  - name: arxiv-cs-lg
+    kind: rss
+    url: http://export.arxiv.org/rss/cs.LG
+    section: arXiv cs.LG (Machine Learning)
+    enabled: true
+    weight: 1.0

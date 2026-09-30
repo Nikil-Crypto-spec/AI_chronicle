@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ subject }}</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f6f8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#222;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f5f6f8;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+        <table role="presentation" width="640" cellspacing="0" cellpadding="0" style="max-width:640px;width:100%;background:#ffffff;border-radius:8px;border:1px solid #e3e6ea;">
+          <tr>
+            <td style="padding:24px 28px 8px 28px;border-bottom:1px solid #eef0f3;">
+              <h1 style="margin:0;font-size:22px;line-height:1.3;color:#0b2545;">Weekly Science Digest</h1>
+              <p style="margin:6px 0 0 0;font-size:13px;color:#5b6573;">
+                {{ date_range }} &middot; {{ items|length }} items &middot; {{ source_count }} sources
+              </p>
+            </td>
+          </tr>
+
+          {% for source_name, group in items_by_source.items() %}
+          <tr>
+            <td style="padding:20px 28px 4px 28px;">
+              <h2 style="margin:0 0 6px 0;font-size:15px;font-weight:600;color:#0b2545;text-transform:uppercase;letter-spacing:0.04em;">
+                {{ group.section or source_name }}
+              </h2>
+            </td>
+          </tr>
+          {% for s in group.entries %}
+          <tr>
+            <td style="padding:10px 28px 14px 28px;border-bottom:1px solid #f1f3f6;">
+              <a href="{{ s.ranked.item.url }}" style="font-size:16px;font-weight:600;color:#1a4ea3;text-decoration:none;line-height:1.35;">
+                {{ s.ranked.item.title }}
+              </a>
+              <p style="margin:8px 0 6px 0;font-size:14px;line-height:1.55;color:#222;">
+                {{ s.tldr }}
+              </p>
+              {% if s.why_it_matters %}
+              <p style="margin:6px 0;font-size:13px;line-height:1.5;color:#3d4a5c;">
+                <strong>Why it matters:</strong> {{ s.why_it_matters }}
+              </p>
+              {% endif %}
+              {% if s.key_points %}
+              <ul style="margin:6px 0 4px 18px;padding:0;font-size:13px;color:#3d4a5c;">
+                {% for kp in s.key_points %}
+                <li style="margin:2px 0;">{{ kp }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+              <p style="margin:6px 0 0 0;font-size:11px;color:#8390a2;">
+                {{ s.ranked.item.source }}
+                {% if s.ranked.item.published_at %} &middot; {{ s.ranked.item.published_at.strftime('%Y-%m-%d') }}{% endif %}
+                {% if s.ranked.matched_topics %} &middot; topics: {{ s.ranked.matched_topics|join(', ') }}{% endif %}
+                {% if s.used_fallback %} &middot; <em>abstract</em>{% endif %}
+              </p>
+            </td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+
+          <tr>
+            <td style="padding:16px 28px 22px 28px;font-size:11px;color:#8390a2;">
+              Generated {{ generated_at }} &middot; backend: {{ backend }} &middot; runtime: {{ runtime_s }}s
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

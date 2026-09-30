@@ -1,0 +1,368 @@
+topics:
+  - name: cybersecurity_and_privacy
+    weight: 0.85
+    keywords:
+      - "cybersecurity"
+      - "malware"
+      - "phishing"
+      - "ransomware"
+      - "privacy"
+      - "differential privacy"
+      - "encryption"
+      - "cryptography"
+      - "zero trust"
+      - "authentication"
+      - "authorization"
+      - "identity management"
+      - "vulnerability"
+      - "exploit"
+      - "CVE"
+      - "threat detection"
+      - "endpoint security"
+      - "cloud security"
+      - "network security"
+    phrases:
+      - "threat intelligence"
+      - "privacy-preserving"
+      - "security operations"
+      - "incident response"
+      - "penetration testing"
+      - "secure software development"
+      - "zero trust architecture"
+    seed_sentences:
+      - "Security threats, defense methods, and privacy-preserving computation techniques."
+
+  - name: artificial_intelligence
+    weight: 0.95
+    keywords:
+      - "artificial intelligence"
+      - "machine learning"
+      - "deep learning"
+      - "LLM"
+      - "large language model"
+      - "generative AI"
+      - "transformer"
+      - "AI"
+      - "GPT"
+      - "Claude"
+      - "Gemini"
+      - "Mistral"
+      - "Llama"
+      - "fine-tuning"
+      - "inference"
+    phrases:
+      - "foundation model"
+      - "AI safety"
+      - "model alignment"
+      - "reasoning model"
+      - "AI agent"
+      - "multimodal model"
+    seed_sentences:
+      - "Advances in AI models, applications, safety, and deployment."
+
+  - name: ai_agents
+    weight: 0.90
+    keywords:
+      - "AI agent"
+      - "autonomous agent"
+      - "agentic AI"
+      - "tool calling"
+      - "planning"
+      - "memory"
+      - "workflow automation"
+      - "multi-agent"
+    phrases:
+      - "agent framework"
+      - "autonomous workflow"
+      - "computer use"
+    seed_sentences:
+      - "Research and products involving AI agents and autonomous systems."
+
+  - name: software_engineering
+    weight: 0.85
+    keywords:
+      - "software engineering"
+      - "programming"
+      - "API"
+      - "REST"
+      - "GraphQL"
+      - "Git"
+      - "GitHub"
+      - "CI/CD"
+      - "DevOps"
+      - "testing"
+      - "refactoring"
+      - "code review"
+    phrases:
+      - "developer productivity"
+      - "distributed systems"
+      - "clean architecture"
+    seed_sentences:
+      - "Software development practices, tooling, and architecture."
+
+  - name: developer_tools
+    weight: 0.82
+    keywords:
+      - "IDE"
+      - "VS Code"
+      - "JetBrains"
+      - "compiler"
+      - "debugger"
+      - "SDK"
+      - "CLI"
+      - "build system"
+      - "package manager"
+    phrases:
+      - "developer experience"
+      - "code generation"
+      - "productivity tools"
+    seed_sentences:
+      - "Developer tools and workflows that improve engineering productivity."
+
+  - name: cloud_and_infrastructure
+    weight: 0.82
+    keywords:
+      - "cloud"
+      - "AWS"
+      - "Azure"
+      - "Google Cloud"
+      - "Kubernetes"
+      - "Docker"
+      - "serverless"
+      - "virtual machine"
+      - "container"
+      - "Terraform"
+    phrases:
+      - "cloud infrastructure"
+      - "platform engineering"
+      - "infrastructure as code"
+    seed_sentences:
+      - "Cloud computing and infrastructure technologies."
+
+  - name: data_science
+    weight: 0.80
+    keywords:
+      - "data science"
+      - "analytics"
+      - "statistics"
+      - "visualization"
+      - "forecasting"
+      - "data mining"
+      - "business intelligence"
+    phrases:
+      - "predictive analytics"
+      - "feature engineering"
+    seed_sentences:
+      - "Data analysis, statistical modeling, and business intelligence."
+
+  - name: mlops
+    weight: 0.84
+    keywords:
+      - "MLOps"
+      - "model serving"
+      - "model deployment"
+      - "feature store"
+      - "experiment tracking"
+      - "monitoring"
+      - "vector database"
+    phrases:
+      - "machine learning pipeline"
+      - "model lifecycle"
+    seed_sentences:
+      - "Infrastructure and tooling for production machine learning."
+
+  - name: robotics
+    weight: 0.78
+    keywords:
+      - "robotics"
+      - "robot"
+      - "humanoid"
+      - "drone"
+      - "automation"
+      - "SLAM"
+      - "autonomous vehicle"
+    phrases:
+      - "robot learning"
+      - "autonomous navigation"
+    seed_sentences:
+      - "Robotics, automation, and intelligent machines."
+
+  - name: quantum_computing
+    weight: 0.75
+    keywords:
+      - "quantum computing"
+      - "qubit"
+      - "quantum algorithm"
+      - "quantum cryptography"
+      - "QAOA"
+    phrases:
+      - "fault tolerant quantum"
+      - "quantum error correction"
+    seed_sentences:
+      - "Research in quantum computing and quantum information."
+
+  - name: blockchain_and_web3
+    weight: 0.70
+    keywords:
+      - "blockchain"
+      - "Web3"
+      - "Ethereum"
+      - "Bitcoin"
+      - "smart contract"
+      - "DeFi"
+      - "NFT"
+      - "cryptocurrency"
+    phrases:
+      - "distributed ledger"
+      - "zero knowledge proof"
+    seed_sentences:
+      - "Blockchain technology and decentralized systems."
+
+  - name: healthcare_ai
+    weight: 0.82
+    keywords:
+      - "healthcare AI"
+      - "medical AI"
+      - "clinical"
+      - "diagnosis"
+      - "medical imaging"
+      - "electronic health records"
+    phrases:
+      - "precision medicine"
+      - "clinical decision support"
+    seed_sentences:
+      - "Artificial intelligence in healthcare and medicine."
+
+  - name: fintech
+    weight: 0.76
+    keywords:
+      - "fintech"
+      - "banking"
+      - "payments"
+      - "financial technology"
+      - "fraud detection"
+      - "digital wallet"
+    phrases:
+      - "embedded finance"
+      - "open banking"
+    seed_sentences:
+      - "Technology innovation in financial services."
+
+  - name: climate_and_energy
+    weight: 0.72
+    keywords:
+      - "climate"
+      - "renewable energy"
+      - "solar"
+      - "wind"
+      - "battery"
+      - "electric vehicle"
+      - "carbon capture"
+    phrases:
+      - "energy transition"
+      - "climate technology"
+    seed_sentences:
+      - "Innovations in sustainable energy and climate technology."
+
+  - name: startups_and_venture
+    weight: 0.74
+    keywords:
+      - "startup"
+      - "venture capital"
+      - "funding"
+      - "seed round"
+      - "Series A"
+      - "Series B"
+      - "IPO"
+    phrases:
+      - "product market fit"
+      - "startup ecosystem"
+    seed_sentences:
+      - "Startup ecosystem, funding, and entrepreneurship."
+
+  - name: product_management
+    weight: 0.70
+    keywords:
+      - "product management"
+      - "roadmap"
+      - "A/B testing"
+      - "user research"
+      - "product strategy"
+    phrases:
+      - "customer discovery"
+      - "product analytics"
+    seed_sentences:
+      - "Building successful technology products."
+
+  - name: databases
+    weight: 0.78
+    keywords:
+      - "database"
+      - "PostgreSQL"
+      - "MySQL"
+      - "SQLite"
+      - "MongoDB"
+      - "Redis"
+      - "SQL"
+      - "NoSQL"
+    phrases:
+      - "query optimization"
+      - "database performance"
+    seed_sentences:
+      - "Database systems, storage, and query optimization."
+
+  - name: networking
+    weight: 0.73
+    keywords:
+      - "networking"
+      - "TCP/IP"
+      - "DNS"
+      - "HTTP"
+      - "BGP"
+      - "5G"
+      - "Wi-Fi"
+      - "SDN"
+    phrases:
+      - "network security"
+      - "internet infrastructure"
+    seed_sentences:
+      - "Computer networking and internet infrastructure."
+
+  - name: computer_vision
+    weight: 0.82
+    keywords:
+      - "computer vision"
+      - "image recognition"
+      - "object detection"
+      - "segmentation"
+      - "OCR"
+      - "vision transformer"
+    phrases:
+      - "image generation"
+      - "visual understanding"
+    seed_sentences:
+      - "Computer vision and image understanding research."
+
+  - name: natural_language_processing
+    weight: 0.83
+    keywords:
+      - "NLP"
+      - "natural language processing"
+      - "text generation"
+      - "summarization"
+      - "translation"
+      - "question answering"
+    phrases:
+      - "language model"
+      - "retrieval augmented generation"
+    seed_sentences:
+      - "Natural language understanding and language model research."
+
+penalties:
+  keywords:
+    - "retraction"
+    - "errata"
+    - "correction"
+    - "withdrawn"
+    - "duplicate publication"
+  weight: 0.5
